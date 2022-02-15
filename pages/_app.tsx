@@ -1,7 +1,7 @@
-import "../styles/globals.css"
+import "@/styles/globals.css"
 import type { AppProps } from "next/app"
-import Chakra from "../components/chakra"
-import Layout from "../components/layouts/main"
+import Chakra from "@/components/chakra"
+import Layout from "@/components/layouts/main"
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
