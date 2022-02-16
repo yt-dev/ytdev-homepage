@@ -21,7 +21,17 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+interface WorkGridItemProps {
+  id: string
+  title: string
+  thumbnail: StaticImageData
+}
+export const WorkGridItem: React.FC<WorkGridItemProps> = ({
+  children,
+  id,
+  title,
+  thumbnail,
+}) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">

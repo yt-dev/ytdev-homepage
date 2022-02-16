@@ -29,7 +29,7 @@ You can create your own homepage for free without notifying me by forking this p
 
 ## Credits
 
-- [Takuya's Homepage](https://www.craftz.dog)
+- [Takuya's Homepage](https://github.com/craftzdog/craftzdog-homepage)
 
 ---
 
