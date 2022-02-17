@@ -21,6 +21,15 @@ $PROJECT_ROOT
 └── public
 ```
 
+## How to dev
+
+[Node.js](https://nodejs.org/) is required.
+
+```sh
+$ npm install
+$ npm run dev
+```
+
 ## License
 
 MIT License.
