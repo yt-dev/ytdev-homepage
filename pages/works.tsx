@@ -1,12 +1,12 @@
 import type { NextPage } from "next/types"
 import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react"
-import Layout from "../components/layouts/article"
-import Section from "../components/section"
-import { WorkGridItem } from "../components/grid-item"
 
-import thumbEduink from "../public/images/works/eduink_app.png"
-import thumbTrip from "../public/images/works/trip_app.png"
-import thumbConsole from "../public/images/works/console_app.png"
+import Layout from "@/components/layouts/article"
+import Section from "@/components/section"
+import { WorkGridItem } from "@/components/grid-item"
+import thumbEduink from "@/public/images/works/eduink_app.png"
+import thumbTrip from "@/public/images/works/trip_app.png"
+import thumbConsole from "@/public/images/works/console_app.png"
 
 const Works: NextPage = () => (
   <Layout title="Works">

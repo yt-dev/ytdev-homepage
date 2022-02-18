@@ -8,7 +8,10 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 },
 }
 
-const Layout = ({ children, title }) => (
+interface LayoutProps {
+  title: string
+}
+const Layout: React.FC<LayoutProps> = ({ children, title }) => (
   <motion.article
     initial="hidden"
     animate="enter"
@@ -20,7 +23,7 @@ const Layout = ({ children, title }) => (
     <>
       {title && (
         <Head>
-          <title>{title} - Takuya Matsuyama</title>
+          <title>{title} - YT Huang</title>
           <meta name="twitter:title" content={title} />
           <meta property="og:title" content={title} />
         </Head>
