@@ -33,7 +33,6 @@ const Work = () => (
       <Image
         src={useColorModeValue(thumbnailLight, thumbnailDark)}
         alt="EDU.INK App Mockup"
-        className="grid-item-thumbnail"
         placeholder="blur"
         loading="lazy"
       />

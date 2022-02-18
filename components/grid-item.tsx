@@ -3,7 +3,17 @@ import Image from "next/image"
 import { Box, Text, LinkBox, LinkOverlay } from "@chakra-ui/react"
 import { Global } from "@emotion/react"
 
-export const GridItem = ({ children, href, title, thumbnail }) => (
+interface GridItemProps {
+  href: string
+  title: string
+  thumbnail: string
+}
+export const GridItem: React.FC<GridItemProps> = ({
+  children,
+  href,
+  title,
+  thumbnail,
+}) => (
   <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
       <Image
@@ -24,7 +34,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 interface WorkGridItemProps {
   id: string
   title: string
-  thumbnail: StaticImageData
+  thumbnail: string
 }
 export const WorkGridItem: React.FC<WorkGridItemProps> = ({
   children,
@@ -33,7 +43,7 @@ export const WorkGridItem: React.FC<WorkGridItemProps> = ({
   thumbnail,
 }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/works/${id}`}>
+    <NextLink href={`/works/${id}`} scroll={false}>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}

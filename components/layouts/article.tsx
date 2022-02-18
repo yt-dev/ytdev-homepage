@@ -9,7 +9,7 @@ const variants = {
 }
 
 interface LayoutProps {
-  title: string
+  title?: string
 }
 const Layout: React.FC<LayoutProps> = ({ children, title }) => (
   <motion.article
