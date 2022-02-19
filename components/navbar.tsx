@@ -17,8 +17,22 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./theme-toggle-button"
 import { IoLogoGithub } from "react-icons/io5"
+import { HTMLAttributeAnchorTarget } from "react"
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const SOURCE_URL = "https://github.com/yt-dev/ytdev-homepage"
+
+interface LinkItemProps {
+  href: string
+  path: string
+  _target?: HTMLAttributeAnchorTarget
+}
+const LinkItem: React.FC<LinkItemProps> = ({
+  href,
+  path,
+  _target,
+  children,
+  ...props
+}) => {
   const active = path === href
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900")
   return (
@@ -27,7 +41,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
         p={2}
         bg={active ? "grassTeal" : undefined}
         color={active ? "#202023" : inactiveColor}
-        _target={_target}
+        target={_target}
         {...props}
       >
         {children}
@@ -36,7 +50,10 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   )
 }
 
-const Navbar = (props) => {
+interface NavbarProps {
+  path: string
+}
+const Navbar: React.FC<NavbarProps> = (props) => {
   const { path } = props
 
   return (
@@ -79,7 +96,7 @@ const Navbar = (props) => {
           </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://github.com/yt-dev/ytdev-homepage"
+            href={SOURCE_URL}
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -112,10 +129,7 @@ const Navbar = (props) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/yt-dev/ytdev-homepage"
-                >
+                <MenuItem as={Link} href={SOURCE_URL}>
                   View Source
                 </MenuItem>
               </MenuList>

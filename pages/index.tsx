@@ -38,8 +38,7 @@ const Home: NextPage = () => (
           <Heading as="h2" variant="page-title">
             YT Huang
           </Heading>
-          <p>--</p>
-          {/* <p>Digital Craftsman ( Artist / Developer / Designer )</p> */}
+          <p>Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -65,9 +64,9 @@ const Home: NextPage = () => (
           Work
         </Heading>
         <Paragraph>
-          <br />
-          -- pending edit
-          <br />
+          I&apos;m a software engineer who has been working in the industry for
+          more than three years. I&apos;m a fan of JavaScript, TypeScript,
+          React, Next.js, and Vue.js.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works">
@@ -91,7 +90,7 @@ const Home: NextPage = () => (
           Graduate at college
         </BioSection>
         <BioSection>
-          <BioYear>Second half of 2018 to present</BioYear>
+          <BioYear>2018 to present</BioYear>
           Works at{" "}
           <Link href="https://edu.ink/" target="_blank">
             EDU.INK Limited
@@ -104,9 +103,11 @@ const Home: NextPage = () => (
           I ♥
         </Heading>
         <Paragraph>
-          <br />
-          -- pending edit
-          <br />
+          Anime, Music,{" "}
+          <Link href="https://copilot.github.com/" target="_blank">
+            GitHub Copilot,
+          </Link>{" "}
+          Web3, Metaverse, etc.
         </Paragraph>
       </Section>
 
