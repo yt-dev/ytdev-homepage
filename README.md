@@ -4,12 +4,11 @@
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
 - [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
-- [Three.js](https://threejs.org/) - 3D library for JavaScript
 - [Framer Motion](https://www.framer.com/motion/) - An animation library for React
 
 ## Project structure
 
-```
+```sh
 $PROJECT_ROOT
 │   # Page files
 ├── pages
@@ -21,27 +20,28 @@ $PROJECT_ROOT
 └── public
 ```
 
-## How to dev
+## Dev
 
 [Node.js](https://nodejs.org/) is required.
 
 ```sh
-$ npm install
-$ npm run dev
+npm install
+npm run dev
 ```
 
-## License
+## Deploy
 
-MIT License.
+[<img align="left" alt="Vercel logo" width="100" src="./public/vercel-dark.svg" />](https://vercel.com#gh-light-mode-only)
+[<img align="left" alt="Vercel logo" width="100" src="./public/vercel-light.svg" />](https://vercel.com#gh-dark-mode-only)
+
+## License
 
 You can create your own homepage for free without notifying me by forking this project. You are welcome.
 
 ## Credits
 
-- [Takuya's Homepage](https://github.com/craftzdog/craftzdog-homepage)
+- [craftzdog/craftzdog-homepage](https://github.com/craftzdog/craftzdog-homepage)
 
 ---
 
-Looking for a Markdown note-taking app? Check out Takuya's app called [Inkdrop](https://inkdrop.app/).
-
-<img src="https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png" alt="Inkdrop" width="100"/>
+✨ Looking for a Markdown note-taking app? Check out [Takuya](https://craftz.dog)'s app called [Inkdrop](https://inkdrop.app/).
