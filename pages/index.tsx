@@ -68,7 +68,7 @@ const Home: NextPage = () => (
           more than three years. I&apos;m a fan of JavaScript, TypeScript,
           React, Next.js, and Vue.js.
         </Paragraph>
-        <Box align="center" my={4}>
+        <Box display="flex" justifyContent="center" my={4}>
           <NextLink href="/works">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My portfolio
@@ -129,24 +129,7 @@ const Home: NextPage = () => (
           </ListItem>
         </List>
 
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-
-        <Box align="center" my={4}>
+        <Box display="flex" justifyContent="center" my={4}>
           <NextLink href="/posts">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Popular posts

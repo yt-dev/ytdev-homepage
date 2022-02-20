@@ -18,11 +18,16 @@ export const Title: React.FC<TitleProps> = ({ children }) => (
   </Box>
 )
 
-export const WorkImage = ({ src, alt }) => (
+interface WorkImageProps {
+  src?: string
+  alt?: string
+}
+export const WorkImage: React.FC<WorkImageProps> = ({ src, alt }) => (
   <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
 )
 
-export const Meta = ({ children }) => (
+interface MetaProps {}
+export const Meta: React.FC<MetaProps> = ({ children }) => (
   <Badge colorScheme="green" mr={2}>
     {children}
   </Badge>

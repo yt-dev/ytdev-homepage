@@ -1,8 +1,17 @@
 import { extendTheme } from "@chakra-ui/react"
 import { mode } from "@chakra-ui/theme-tools"
 
+type Dict<T = any> = Record<string, T>
+type StyleFunctionProps = {
+  colorScheme: string
+  colorMode: "light" | "dark"
+  orientation?: "horizontal" | "vertical"
+  theme: Dict
+  [key: string]: any
+}
+
 const styles = {
-  global: (props) => ({
+  global: (props: Dict | StyleFunctionProps) => ({
     body: {
       bg: mode("#f0e7db", "#202023")(props),
     },
@@ -24,7 +33,7 @@ const components = {
     },
   },
   Link: {
-    baseStyle: (props) => ({
+    baseStyle: (props: Dict | StyleFunctionProps) => ({
       color: mode("#3d7aed", "#ff63c3")(props),
       textUnderlineOffset: 3,
     }),

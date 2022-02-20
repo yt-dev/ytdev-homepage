@@ -35,7 +35,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            YT Huang
+            🧑‍💻 YT Huang
           </Text>
         </LogoBox>
       </a>

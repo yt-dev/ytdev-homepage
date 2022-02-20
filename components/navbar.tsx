@@ -13,23 +13,21 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue,
+  LinkProps,
 } from "@chakra-ui/react"
 import { HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./theme-toggle-button"
 import { IoLogoGithub } from "react-icons/io5"
-import { HTMLAttributeAnchorTarget } from "react"
 
 const SOURCE_URL = "https://github.com/yt-dev/ytdev-homepage"
 
-interface LinkItemProps {
+interface LinkItemProps extends LinkProps {
   href: string
   path: string
-  _target?: HTMLAttributeAnchorTarget
 }
 const LinkItem: React.FC<LinkItemProps> = ({
   href,
   path,
-  _target,
   children,
   ...props
 }) => {
@@ -41,7 +39,6 @@ const LinkItem: React.FC<LinkItemProps> = ({
         p={2}
         bg={active ? "grassTeal" : undefined}
         color={active ? "#202023" : inactiveColor}
-        target={_target}
         {...props}
       >
         {children}
@@ -70,9 +67,8 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        alignItems="center"
+        justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={"tighter"}>
@@ -95,7 +91,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             Posts
           </LinkItem>
           <LinkItem
-            _target="_blank"
+            target="_blank"
             href={SOURCE_URL}
             path={path}
             display="inline-flex"
@@ -108,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} display="flex" justifyContent="flex-end">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>

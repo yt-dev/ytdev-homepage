@@ -34,7 +34,7 @@ export const GridItem: React.FC<GridItemProps> = ({
 interface WorkGridItemProps {
   id: string
   title: string
-  thumbnail: string
+  thumbnail: StaticImageData
 }
 export const WorkGridItem: React.FC<WorkGridItemProps> = ({
   children,

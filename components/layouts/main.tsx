@@ -38,6 +38,7 @@ const Main: React.FC<MainProps> = ({ children, router }) => {
 
       <Container maxW="container.md" pt={14}>
         {/* <LazyVoxelDog /> */}
+        <Box height={50} />
 
         {children}
 
