@@ -23,7 +23,7 @@ const Main: React.FC<MainProps> = ({ children, router }) => {
         <meta name="author" content="YT Huang" />
         <meta name="author" content="YT Dev" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        {/* <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> */}
         {/* <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@craftzdog" />
         <meta name="twitter:creator" content="@craftzdog" />
@@ -31,7 +31,7 @@ const Main: React.FC<MainProps> = ({ children, router }) => {
         <meta property="og:site_name" content="ytdev's homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/card.png" />
-        <title>YT Dev - Homepage</title>
+        <title>YT Huang - Homepage</title>
       </Head>
 
       <NavBar path={router.asPath} />
