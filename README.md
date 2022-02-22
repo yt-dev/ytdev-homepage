@@ -31,8 +31,7 @@ npm run dev
 
 ## Deploy
 
-[<img align="left" alt="Vercel logo" width="100" src="./public/vercel-dark.svg" />](https://vercel.com#gh-light-mode-only)
-[<img align="left" alt="Vercel logo" width="100" src="./public/vercel-light.svg" />](https://vercel.com#gh-dark-mode-only)
+[Vercel](https://vercel.com/)
 
 ## License
 

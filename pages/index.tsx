@@ -53,7 +53,7 @@ const Home: NextPage = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="https://avatars.githubusercontent.com/u/38404369?v=4"
+            src="/images/avatar.png"
             alt="Profile image"
           />
         </Box>
