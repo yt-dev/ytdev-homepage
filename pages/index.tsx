@@ -53,7 +53,7 @@ const Home: NextPage = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="https://avatars.githubusercontent.com/u/38404369?v=4"
+            src="/images/avatar.png"
             alt="Profile image"
           />
         </Box>
@@ -103,11 +103,11 @@ const Home: NextPage = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Anime, Music,{" "}
+          Anime, Music, Web3, Metaverse,{" "}
           <Link href="https://copilot.github.com/" target="_blank">
-            GitHub Copilot,
+            GitHub Copilot
           </Link>{" "}
-          Web3, Metaverse, etc.
+          and more.
         </Paragraph>
       </Section>
 
