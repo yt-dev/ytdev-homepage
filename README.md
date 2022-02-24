@@ -20,16 +20,16 @@ $PROJECT_ROOT
 └── public
 ```
 
-## Dev
+## How to dev
 
 [Node.js](https://nodejs.org/) is required.
 
 ```sh
-npm install
-npm run dev
+yarn
+yarn dev
 ```
 
-## Deploy
+## How to deploy
 
 [Vercel](https://vercel.com/)
 
@@ -43,4 +43,4 @@ You can create your own homepage for free without notifying me by forking this p
 
 ---
 
-✨ Looking for a Markdown note-taking app? Check out [Takuya](https://craftz.dog)'s app called [Inkdrop](https://inkdrop.app/).
+✨ Looking for a Markdown note-taking app? Check out [Takuya](https://craftz.dog)'s app called [Inkdrop](https://inkdrop.app).

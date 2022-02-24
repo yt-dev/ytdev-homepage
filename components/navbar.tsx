@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         justifyContent="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={"tighter"}>
+          <Heading as="h1" size="md" letterSpacing={"tighter"}>
             <Logo />
           </Heading>
         </Flex>

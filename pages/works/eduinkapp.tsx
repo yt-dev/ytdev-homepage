@@ -27,7 +27,7 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, React Native</span>
+          <span>TypeScript, React Native, Socket.IO</span>
         </ListItem>
       </List>
       <Image

@@ -1,16 +1,16 @@
 import type { NextPage } from "next/types"
 import NextLink from "next/link"
+import Image from "next/image"
 import {
   Link,
   Container,
   Heading,
   Box,
-  Image,
   Button,
   List,
   ListItem,
-  Icon,
   useColorModeValue,
+  chakra,
 } from "@chakra-ui/react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { IoLogoGithub } from "react-icons/io5"
@@ -19,6 +19,10 @@ import Paragraph from "@/components/paragraph"
 import { BioSection, BioYear } from "@/components/bio"
 import Layout from "@/components/layouts/article"
 import Section from "@/components/section"
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
+})
 
 const Home: NextPage = () => (
   <Layout>
@@ -38,7 +42,7 @@ const Home: NextPage = () => (
           <Heading as="h2" variant="page-title">
             YT Huang
           </Heading>
-          <p>Developer</p>
+          <p>Just a developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -46,16 +50,24 @@ const Home: NextPage = () => (
           ml={{ md: 6 }}
           textAlign="center"
         >
-          <Image
+          <Box
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="100px"
+            w="100px"
+            h="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/avatar.png"
-            alt="Profile image"
-          />
+            overflow="hidden"
+          >
+            <ProfileImage
+              src="/images/avatar.png"
+              alt="Profile image"
+              borderRadius="full"
+              width="100%"
+              height="100%"
+            />
+          </Box>
         </Box>
       </Box>
 
@@ -121,7 +133,7 @@ const Home: NextPage = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoGithub} />}
+                leftIcon={<IoLogoGithub />}
               >
                 @yt-dev
               </Button>
