@@ -20,7 +20,7 @@ const Main: React.FC<MainProps> = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@kuon_one" />
         <meta name="twitter:creator" content="@kuon_one" />
-        <meta name="twitter:image" content="/thumbnail.png" />
+        <meta name="twitter:image:src" content="/thumbnail.png" />
         <meta property="og:site_name" content="YT Huang's Homepage" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/thumbnail.png" />
