@@ -102,7 +102,7 @@ const Home: NextPage = () => (
           Graduate at college
         </BioSection>
         <BioSection>
-          <BioYear>2018 to present</BioYear>
+          <BioYear>From 2018</BioYear>
           Works at{" "}
           <Link href="https://edu.ink/" target="_blank">
             EDU.INK Limited
