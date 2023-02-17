@@ -1,5 +1,5 @@
-import Logo from "./logo"
-import NextLink from "next/link"
+import Logo from "./logo";
+import NextLink from "next/link";
 import {
   Container,
   Box,
@@ -14,16 +14,16 @@ import {
   IconButton,
   useColorModeValue,
   LinkProps,
-} from "@chakra-ui/react"
-import { HamburgerIcon } from "@chakra-ui/icons"
-import ThemeToggleButton from "./theme-toggle-button"
-import { IoLogoGithub } from "react-icons/io5"
+} from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import ThemeToggleButton from "./theme-toggle-button";
+import { IoLogoGithub } from "react-icons/io5";
 
-const SOURCE_URL = "https://github.com/yt-dev/ytdev-homepage"
+const SOURCE_URL = "https://github.com/yt-dev/ytdev-homepage";
 
 interface LinkItemProps extends LinkProps {
-  href: string
-  path: string
+  href: string;
+  path: string;
 }
 const LinkItem: React.FC<LinkItemProps> = ({
   href,
@@ -31,8 +31,8 @@ const LinkItem: React.FC<LinkItemProps> = ({
   children,
   ...props
 }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900")
+  const active = path === href;
+  const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
   return (
     <NextLink href={href} passHref>
       <Link
@@ -44,14 +44,14 @@ const LinkItem: React.FC<LinkItemProps> = ({
         {children}
       </Link>
     </NextLink>
-  )
-}
+  );
+};
 
 interface NavbarProps {
-  path: string
+  path: string;
 }
 const Navbar: React.FC<NavbarProps> = (props) => {
-  const { path } = props
+  const { path } = props;
 
   return (
     <Box
@@ -87,9 +87,9 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          {/* <LinkItem href="/posts" path={path}>
             Posts
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem
             target="_blank"
             href={SOURCE_URL}
@@ -134,7 +134,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
